@@ -1,0 +1,207 @@
+.uploader-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", sans-serif;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* 🎯 DATOS GENERALES EN GRID HORIZONTAL */
+.datos-generales {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.datos-generales input,
+.datos-generales textarea,
+.datos-generales select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fafafa;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.datos-generales textarea {
+  grid-column: span 2; /* El textarea ocupa 2 columnas */
+  resize: vertical;
+  min-height: 80px;
+}
+
+.datos-generales input:focus,
+.datos-generales textarea:focus,
+.datos-generales select:focus {
+  outline: none;
+  border-color: #007bff; /* 👈 Cambiado de rosa a azul */
+  background-color: #fff;
+}
+
+/* 🖼️ PREVIEW DE IMAGEN */
+.preview-container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.preview-img {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 10px;
+  border: 2px solid #eee;
+  object-fit: cover;
+}
+
+/* 📦 SECCIÓN DE STOCK HORIZONTAL */
+.stock-section {
+  margin-top: 1rem;
+}
+
+.stock-section h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: #444;
+  text-align: center;
+}
+
+/* 🎯 GRID COMPACTO PARA TALLES */
+.stock-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  max-width: 100%;
+}
+
+.talle-bloque {
+  border: 1px solid #ddd; /* 👈 Cambiado de rosa a gris */
+  border-radius: 12px;
+  padding: 1rem;
+  background-color: #f9f9f9; /* 👈 Cambiado de rosa a gris claro */
+  transition: none; /* 👈 Eliminado el hover effect */
+}
+
+.talle-bloque h5 {
+  margin-bottom: 0.8rem;
+  text-align: center;
+  color: #333; /* 👈 Cambiado de rosa a gris oscuro */
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* 🎨 COLORES EN GRID COMPACTO */
+.color-inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.color-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color-item label {
+  font-size: 0.75rem;
+  display: block;
+  color: #555;
+  margin-bottom: 0.2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.color-item input {
+  padding: 0.3rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 50px;
+  text-align: center;
+  font-size: 0.85rem;
+  transition: border-color 0.3s ease;
+}
+
+.color-item input:focus {
+  border-color: #007bff; /* 👈 Cambiado de rosa a azul */
+  outline: none;
+  background-color: #fff;
+}
+
+/* 🚀 BOTÓN DE SUBIR */
+.boton-subir {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%); /* 👈 Cambiado a azul */
+  color: white;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+  align-self: center;
+  min-width: 200px;
+}
+
+.boton-subir:hover {
+  background: linear-gradient(135deg, #0056b3 0%, #004085 100%); /* 👈 Hover azul más oscuro */
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+}
+
+/* 📱 RESPONSIVE DESIGN */
+@media (max-width: 1200px) {
+  .stock-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .datos-generales {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .datos-generales textarea {
+    grid-column: span 2;
+  }
+
+  .stock-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .uploader-form {
+    padding: 1rem;
+  }
+
+  .datos-generales {
+    grid-template-columns: 1fr;
+  }
+
+  .datos-generales textarea {
+    grid-column: span 1;
+  }
+
+  .stock-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .color-inputs {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  .stock-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

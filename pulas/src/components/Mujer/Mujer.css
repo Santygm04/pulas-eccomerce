@@ -1,0 +1,234 @@
+.mujer-container {
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.mujer-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #222;
+  text-align: center;
+}
+
+/* Base para todas las secciones */
+.product-section {
+  margin-bottom: 3rem;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos con color según categoría */
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 3px solid;
+  color: #fff;
+}
+
+/* Colores y bordes para cada sección */
+.product-section:nth-of-type(1) {
+  background-color: #ffb3b3; /* Rojo suave - Remeras */
+}
+
+.product-section:nth-of-type(1) .section-title {
+  color: #5a4d00;
+  border-color: #ffffff;
+}
+
+.product-section:nth-of-type(2) {
+  background-color: #b3d9ff; /* Azul suave - Pantalones */
+}
+
+.product-section:nth-of-type(2) .section-title {
+  color: #5a4d00;
+  border-color: #ffffff;
+}
+
+.product-section:nth-of-type(3) {
+  background-color: #d9b3ff; /* Morado suave - Camperas */
+}
+
+.product-section:nth-of-type(3) .section-title {
+  color: #5a4d00;
+  border-color: #ffffff;
+}
+
+.product-section:nth-of-type(4) {
+  background-color: #fff0b3; /* Amarillo suave - Accesorios */
+  border-color: #ffffff;
+  color: #333;
+}
+
+.product-section:nth-of-type(4) .section-title {
+  border-color: #ffffff;
+  color: #5a4d00;
+}
+
+.product-section:nth-of-type(5) {
+  background-color: #e6dddc; /* Amarillo suave - Accesorios */
+  border-color: #ffffff;
+  color: #333;
+}
+
+.product-section:nth-of-type(5) .section-title {
+  border-color: #ffffff;
+  color: #5a4d00;
+}
+
+.product-section:nth-of-type(6) {
+  background-color: #d0d167; /* Amarillo suave - Accesorios */
+  border-color: #ffffff;
+  color: #333;
+}
+
+.product-section:nth-of-type(6) .section-title {
+  border-color: #ffffff;
+  color: #5a4d00;
+}
+
+.product-section:nth-of-type(7) {
+  background-color: #fae1c0; /* Amarillo suave - Accesorios */
+  border-color: #ffffff;
+  color: #333;
+}
+
+.product-section:nth-of-type(7) .section-title {
+  border-color: #ffffff;
+  color: #5a4d00;
+}
+
+/* Wrapper productos */
+.product-list-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.product-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.filters-toggle-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.filters-toggle-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.reset-filters-btn {
+  background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+  color: #333;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 234, 167, 0.3);
+}
+
+.reset-filters-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 234, 167, 0.4);
+}
+
+.filtered-results {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #e8f5e8 0%, #d4edda 100%);
+  border-radius: 15px;
+  border-left: 4px solid #28a745;
+}
+
+.filter-results-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #155724;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.no-results {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  color: #dc3545;
+  font-size: 1.1rem;
+}
+
+.back-to-sections-btn {
+  background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.back-to-sections-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(116, 185, 255, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .filters-toggle-btn,
+  .reset-filters-btn {
+    width: 100%;
+    max-width: 200px;
+  }
+}

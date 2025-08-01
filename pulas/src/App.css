@@ -1,0 +1,40 @@
+/* 🎯 ESTILOS GLOBALES PARA PREVENIR SCROLL HORIZONTAL */
+#root {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* Asegurar que ningún elemento se salga */
+* {
+  box-sizing: border-box;
+}
+
+/* Contenedor principal de la app */
+.app-container {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Prevenir que las imágenes se salgan */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevenir que el texto se salga */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "5418",
+    "nombre": "Remera Básica",
+    "descripcion": "Remera de algodón 100%",
+    "precio": 3000,
+    "categoria": "hombre",
+    "subCategoria": "remeras",
+    "imagen": "/pulas/src/assets/Hombre/remera.jpg",
+    "stock": {
+      "XS": {
+        "negro": 1,
+        "rojo": 1,
+        "azul": 1,
+        "gris": 1,
+        "blanco": 1
+      },
+      "S": {
+        "negro": 1,
+        "gris": 1,
+        "blanco": 1,
+        "azul": 1,
+        "rojo": 1
+      },
+      "M": {
+        "negro": 1,
+        "rojo": 1,
+        "azul": 1,
+        "gris": 1,
+        "blanco": 1
+      },
+      "L": {
+        "negro": 1,
+        "blanco": 1,
+        "gris": 1,
+        "rojo": 1,
+        "azul": 1
+      },
+      "XL": {
+        "negro": 1,
+        "gris": 1,
+        "blanco": 1,
+        "azul": 1,
+        "rojo": 1
+      },
+      "XXL": {
+        "negro": 1,
+        "rojo": 1,
+        "azul": 1,
+        "gris": 1,
+        "blanco": 1
+      },
+      "XXXL": {
+        "negro": 1,
+        "blanco": 1,
+        "gris": 1,
+        "azul": 1,
+        "rojo": 1
+      }
+    }
+  }
+]

@@ -1,0 +1,83 @@
+.admin-panel {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.admin-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.admin-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.admin-section {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3, #ffe259);
+  border: 1px solid #d60000;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.admin-section h3 {
+  font-size: 1.4rem;
+  color: #222;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.admin-btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #111;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-btn:hover {
+  background-color: #333; /* 👈 Cambiado de gradiente a color sólido */
+}
+
+.admin-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.admin-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.admin-tabs button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f5a0c9;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-tabs button:hover {
+  background-color: #e08bb5; /* 👈 Cambiado de gradiente a color sólido */
+}
